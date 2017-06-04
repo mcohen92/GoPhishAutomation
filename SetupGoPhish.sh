@@ -4,23 +4,23 @@
 # are passed. The user shouldn't need to worry about this because this script and its 
 # command line args will be called by the deployment template. 
 
-if [[ $EUID -ne 0 ]]; then
-	echo "Please run this script as root" 1>&2
-	exit 1
-fi
+#if [[ $EUID -ne 0 ]]; then
+#	echo "Please run this script as root" 1>&2
+#	exit 1
+#fi
 
-apt-get install unzip -y > /dev/null 2>&1
+#apt-get install unzip -y > /dev/null 2>&1
 
-wget https://github.com/gophish/gophish/releases/download/v0.3.0/gophish-v0.3-linux-64bit.zip
+#wget https://github.com/gophish/gophish/releases/download/v0.3.0/gophish-v0.3-linux-64bit.zip
 
-unzip gophish-v0.3-linux-64bit.zip
+#unzip gophish-v0.3-linux-64bit.zip
 
-cd gophish-v0.3-linux-64bit
+#cd gophish-v0.3-linux-64bit
 
-echo "Updating config file"
+#echo "Updating config file"
 
 
-
+touch test.txt
 cat > config.json <<EOL
 {
         "admin_server" : {
