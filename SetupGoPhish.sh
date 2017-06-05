@@ -9,6 +9,8 @@ if [[ $EUID -ne 0 ]]; then
 	exit 1
 fi
 
+cd
+
 apt-get install unzip -y > /dev/null 2>&1
 
 wget https://github.com/gophish/gophish/releases/download/v0.3.0/gophish-v0.3-linux-64bit.zip
