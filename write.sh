@@ -1,6 +1,6 @@
 #!/bin/bash
-touch test.txt
-cat > config.json <<EOL
+touch ~/test.txt
+cat > ~/config.json <<EOL
 {
         "admin_server" : {
                 "listen_url" : "0.0.0.0:3333",
