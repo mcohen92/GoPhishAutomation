@@ -19,8 +19,6 @@ cd gophish-v0.3-linux-64bit
 
 echo "Updating config file"
 
-
-touch test.txt
 cat > config.json <<EOL
 {
         "admin_server" : {
